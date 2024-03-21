@@ -1,20 +1,6 @@
-// @TODO: Where are these header files located?
-//
-// @TODO: What's the significance of angle brackets? Is it because
-// `common.h` is use defined whereas the others are built-in?
-//
 // @TODO: What if I want to use an external library
-
-// @TODO: Assuming that functions such as `printf` and `fprintf` are
-// coming from stdio. Is it correct?
 #include <stdio.h>
 #include <stdlib.h>
-// @TODO: Why do we need to include <sys/time.h> here? Don't see any
-// of it's members being referenced (except for in the common.h file
-// but the same header file is also included there). Same question for
-// assert below.
-#include <sys/time.h>
-#include <assert.h>
 #include "common.h"
 
 int
