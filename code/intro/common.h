@@ -1,5 +1,3 @@
-// @TODO: What's going on here? Are we doing this to ensure that the
-// file will only be included once?
 #ifndef __common_h__
 #define __common_h__
 
@@ -11,8 +9,7 @@ double
 GetTime() {
     struct timeval t;
     int rc = gettimeofday(&t, NULL);
-    // @TODO: Are we checking that the `gettimeofday` function
-    // succeeded by checking its return value?
+
     assert(rc == 0);
     return (double) t.tv_sec + (double) t.tv_usec/1e6;
 }
