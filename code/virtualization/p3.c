@@ -25,7 +25,7 @@ main(int argc, char *argv[])
         // @TODO: Why is the first arg passed separately? What if it's
         // different from the one present in the array passed as 2nd
         // arg?
-        // [ref: syscall_exec]
+        // [tag: syscall_exec]
         execvp(myargs[0], myargs);     // runs word count
         printf("this shouldn't print out\n");
     } else {
